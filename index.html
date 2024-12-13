@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Johan Lemuel N. Amistoso, showcasing projects, skills, and expertise in game development, web development, and programming.">
+    <meta name="keywords" content="Portfolio, Web Development, Game Development, Programming, Johan Lemuel N. Amistoso">
+    <title>Personal Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #625c9b;
+            color: #fffdfd;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .title-screen {
+            height: 100vh;
+            background: linear-gradient(135deg, #aaa3db, #021e48);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+            margin-bottom: 40px; 
+        }
+
+        .title-screen h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            animation: slideIn 2s ease-out;
+        }
+
+        .title-screen p {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: linear-gradient(135deg, #5242cb, rgb(62, 109, 171));
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: -40px;
+            margin-bottom: 40px; 
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 60px; 
+        }
+
+        section h2 {
+            margin-bottom: 20px; 
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px; 
+        }
+
+        .card {
+            background: rgb(62, 109, 171);
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px; 
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px auto; 
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px; 
+        }
+
+        .large-text {
+            font-size: 4rem; 
+            font-weight: bold;
+        }
+
+        .small-text {
+            font-size: 2rem; 
+            font-weight: normal;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px; 
+            margin-top: 40px; 
+        }
+
+        .social-icon {
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2); 
+            filter: brightness(1.2);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        @media screen and (max-width: 768px) {
+            .skills, .projects {
+                grid-template-columns: 1fr;
+            }
+            .title-screen h1 {
+                font-size: 2.5rem;
+            }
+            .title-screen p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="title-screen">
+        <div>
+            <h1>
+                <span class="large-text">Welcome to My Portfolio</span><br>
+                <span class="small-text">Scroll down to experience</span>
+            </h1>
+        </div>
+    </div>
+
+    <header>
+        <h1>Personal Portfolio</h1>
+        <p>Johan Lemuel N. Amistoso</p>
+    </header>
+
+    <div class="container">
+        <section>
+            
+            <div style="text-align: center;">
+                <a href="https://github.com/ZywoOp-code" target="_blank">
+                    <img src="img\image\462578515_1093324749154441_2112150577337987586_n.jpg" alt="Profile Picture">
+                </a>
+            </div>
+            <div class="card">
+                <p>
+                    Hello! I am an aspiring Game Developer, Programmer, and Web Developer striving to create a 
+                    meaningful impact by leveraging technology and innovation. My personal attributes include being 
+                    a leader who can be a voice for others, adaptability in various domains, and a commitment to 
+                    mastering diverse coding languages.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills and Expertise</h2>
+            <div class="skills">
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Game Development</li>
+                        <li>Web Development</li>
+                        <li>Machine Learning</li>
+                        <li>Data Analysis</li>
+                        <li>Cybersecurity</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Other Qualities</h3>
+                    <ul>
+                        <li>Leader</li>
+                        <li>Team Collaborator</li>
+                        <li>Problem Solver</li>
+                        <li>Adaptable</li>
+                        <li>Flexible </li>
+                        <li>etc. </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>Project Showcase: Projects that I worked on.</h2>
+            <div class="projects">
+               
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>Where I showcase my skills and expertise to get a job and also present myself.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>SDG project: Good Health and Well-being</h3>
+                    <p>Another project that aligns with my goals, with the idea of shedding life the idea of better
+                         health and well-being.</p>
+                         <a href="http://127.0.0.1:3000/html.html" style="color: #ffffff; 
+            text-decoration: none;">To see, 
+                            click here.</a> 
+                </div>
+                
+                <div class = "card">
+                    <h3>And more.</h3>
+                    <p>In the past, I did make projects through coding. examples are: Enrollment forms, Record books,
+                         calculators, and etc. of course I will create more projects in the future.   
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>Socials</h2>
+                <a href="mailto:grootmaster69420@gmail.com" target="blank">
+                    <img src="img\image\gmail.png" alt="gmail" class="social-icon"> </a> 
+                <a href="https://facebook.com/johanlemuel.amistoso.9" target="blank">
+                    <img src="img\image\FACEBOOK.png" alt="Facebook" class="social-icon">
+                </a> 
+                <a href="https://x.com/AmistosoJohan" target="blank"> 
+                <img src="img\image\X.png" alt="Twitter" class="social-icon">
+                </a> 
+                <a href="https://github.com/ZywoOp-code" target="blank">
+                    <img src="img\image\download.png" alt="GitHub" class="social-icon">
+                </a> 
+                
+            
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Johan Lemuel N. Amistoso. I have a gold Mewtwo EX. All rights reserved.</p>
+    </footer>
+</body>
+</html>

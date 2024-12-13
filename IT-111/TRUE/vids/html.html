@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG-3: Good Health and Well-Being</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+    body {
+        background-color: #168205;
+        color: white;
+        font-family: 'Roboto, sans-serif';
+        font-size: small;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header {
+        outline: #07670f solid 5px;
+        position: fixed;
+        top: 0;
+        left: 0;    
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    .header h1 {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header img {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a:focus {
+        color: #4CAF50; 
+    }
+
+    .profile-card {
+        background-color: #4c7947;
+        border-radius: 12px;
+        padding: 20px;
+        width: 90%;
+        max-width: 550px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 120px;
+    }
+
+    .profile-card h2 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .profile-card p {
+        font-size: 14px;
+        color: #bbb;
+        margin: 10px 0;
+    }
+
+    .video-text-section {
+        width: 90%;
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        margin: 50px auto; 
+        padding: 20px;
+        background-color: #4c7947;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-text-section video {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        padding: 20px;
+        margin-top: 50px; 
+    }
+
+    .column {
+        width: 100%;
+        max-width: 250px;
+        background-color: #4c7947;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .column img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .column:hover {
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+
+    .column h3 {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .column p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .profile-card, .video-text-section, .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><img src="TRUE/IMAGES/Batangas_State_Logo.png" alt="Batangas State Logo"> SDG-3: Good Health and Well-Being</h1>
+        <div class="nav-links">
+           
+            <a href="http://127.0.0.1:3000/about.html">About</a>
+            <a href="http://127.0.0.1:3000/htmlhtml.html">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <h2>SDG-3</h2>
+        <p class="location">Good Health and Well-Being</p>
+        <p>This website is made to recognize the importance of 
+            having Good Health and Well-being. </p>
+    </div>
+
+    <div class="video-text-section">
+        <video autoplay loop muted>
+            <source src="TRUE/vids/nono.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>To understand the importance of this SDG, we must tackle the basics and make our way up to how we should
+            apply this in our everyday life.
+            Over the last 15 years, the number of childhood deaths has been cut in half. This proves that it is possible to win the fight against almost every disease. Still, 
+            we are spending an astonishing amount of money and resources on treating illnesses that are surprisingly easy to prevent. The new goal for worldwide Good Health promotes healthy lifestyles, 
+            preventive measures, and modern, efficient healthcare for everyone.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <img src="img/image/gogo.png" alt="Why we should be healthier">
+            <h3>Why we should be healthier</h3>
+            <p>Healthy living means maintaining a healthy lifestyle and introducing habits that improve your health. 
+                It can be difficult to change old habits.</p>
+            <p><a href="https://www.foundationforpn.org/living-well/lifestyle/" style="color: #ffffff; 
+            text-decoration: none;">For more info please click here</a></p>
+        </div>
+
+        <div class="column">
+            <img src="img/image/heyhey.png" alt="Why we need to follow the SDGs">
+            <h3>Why we need to follow the SDGs</h3>
+            <p>Following the SDGs creates a more just, sustainable, and prosperous world, securing a 
+                better future for everyone.</p>
+            <p><a href="https://sdgs.un.org/goals/goal3" style="color: #ffffff; text-decoration: none;">For more info please click here</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 JohanA. All rights reserved.</p>
+        <p>
+            <a

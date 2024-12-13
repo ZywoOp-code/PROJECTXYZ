@@ -1,0 +1,11 @@
+<Doctype html>
+    <style>
+        .spaced-element {
+            margin: 20px; /* Space outside the element */
+            padding: 15px; /* Space inside the element */
+            border: 1px solid #ccc;
+        }
+    </style>
+    
+    <div class="spaced-element">This element has spacing!</div>
+    
